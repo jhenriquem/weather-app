@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+
+    <!--- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <i class="fi fi-sr-marker"></i>
+        <input
+          type="text"
+          placeholder="Enter your location"
+          class="name-city-input"
+        />
+        <button class="search-city">
+          <i class="fi fi-br-search"></i>
+        </button>
+      </div>
+      <main class="climate-content">
+        <p class="name-city"></p>
+        <div class="img-climate-box">
+          <i class="fi fi-sr-clouds-sun"></i>
+        </div>
+        <div class="climate-data">
+          <p class="temperature-climate">--</p>
+          <legend class="description-climate"></legend>
+        </div>
+      </main>
+      <div class="outher-climate-data">
+        <div class="wind-climate">
+          <i class="fi fi-br-wind"></i>
+          <p class="wind-speed"></p>
+        </div>
+        <div class="humidity-climate">
+          <i class="fi fi-sr-humidity"></i>
+          <p class="humidity-percentage"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

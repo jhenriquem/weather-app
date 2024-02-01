@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-color: #2e3440;
+  --second-bg-color: #232730;
+  --text-color: #d8dee9;
+}
+* {
+  color: var(--text-color);
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--second-bg-color);
+  min-height: 100vh;
+}
+
+.container {
+  background: var(--bg-color);
+  border-radius: 10px;
+  width: 350px;
+  height: 480px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ----- */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  width: 90%;
+}
+.search-container > i {
+  display: flex;
+  align-items: center;
+}
+
+.name-city-input {
+  border-radius: 5px;
+  padding: 2px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  outline: none;
+}
+.name-city-input::placeholder {
+  color: var(--text-color);
+}
+
+.search-city {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----- */
+.climate-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: -1rem;
+}
+
+.name-city {
+  font-size: 1.5rem;
+}
+.date-city {
+  font-size: 0.8rem;
+}
+
+.img-climate-box {
+  height: 6.2rem;
+}
+.img-climate-box > i {
+  font-size: 6rem;
+}
+
+.temperature-climate {
+  height: 2.3rem;
+  text-align: center;
+  font-weight: 600px;
+  font-size: 2rem;
+}
+.description-climate {
+  margin-top: -1rem;
+}
+
+/* ----- */
+.outher-climate-data {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.outher-climate-data > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.outher-climate-data > div > p {
+  margin-top: -0.8rem;
+  text-align: center;
+}
+.outher-climate-data > div > i {
+  font-size: 2rem;
+  font-weight: 50px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+  .name-city-input {
+    font-size: 1rem;
+  }
+  .search-container {
+    column-gap: 5px;
+  }
+}
